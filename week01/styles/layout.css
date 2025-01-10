@@ -50,6 +50,14 @@ nav {
 	text-decoration-color: yellow;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  background: rgb(238, 238, 238);
+  grid-column: 1 / 4;
+}
+
 .main-content {
   background: rgb(202, 202, 202);
   grid-column: 1 / 3;
