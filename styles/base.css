@@ -82,7 +82,7 @@ img {
 
 .navigation a:hover {
 	font-weight: 700;
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
 main {
