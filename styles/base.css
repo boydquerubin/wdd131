@@ -52,7 +52,12 @@ nav {
 	max-width: 100%;
 }
 
-img {
+img .profile-image {
+  max-width: 200px;
+  height: auto;
+}
+
+img .idaho-flag-image {
   max-width: 200px;
   height: auto;
 }
