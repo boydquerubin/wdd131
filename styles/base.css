@@ -24,6 +24,7 @@ h1 {
   font-family: Audiowide, Arial, Helvetica, sans-serif;
   color: var(--baby-powder);
   background-color: #091c2f;
+  font-size: xx-large;
   text-align: center;
   padding: 2rem;
 }
@@ -31,11 +32,13 @@ h1 {
 h2 {
   font-family: Audiowide, Arial, Helvetica, sans-serif;
   color: var(--oxford-blue);  
+  font-size: x-large;
 }
 
 h3 {
   font-family: Audiowide, Arial, Helvetica, sans-serif;
   color: var(--oxford-blue);  
+  font-size: x-large;
   text-align: center;
   padding: 1rem 0rem 0.5rem 0rem;
 }
@@ -50,7 +53,7 @@ nav {
 }
 
 img {
-  width: 200px;
+  max-width: 200px;
   height: auto;
 }
 
@@ -62,6 +65,7 @@ img {
 	background-color: #3a3a3a;
 	align-items: center;  
   overflow: hidden;
+  font-size: x-large;
 }
 
 .navigation li {
@@ -117,8 +121,6 @@ main .card {
 main .card .profile-image {
   float: right;
   padding: 2rem;
-  width: 200px;
-  height: auto;
 }
 
 main .card .idaho-flag {
@@ -126,8 +128,6 @@ main .card .idaho-flag {
   padding: 2rem;
   margin: 1rem 0rem;
   font-style: italic;
-  width: 200px;
-  height: auto;
 }
 
 figcaption {
@@ -142,6 +142,7 @@ main .card li {
 
 main .web-dev-links {
   font-family: Albert Sans, Arial, Helvetica, sans-serif;
+  font-size: x-large;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -157,6 +158,7 @@ main .idaho-paragraph {
 
 p {
   font-family: Albert Sans, Arial, Helvetica, sans-serif;
+  font-size: x-large;
   padding: 2rem;
 }
 
