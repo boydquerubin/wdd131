@@ -123,15 +123,37 @@ main .card .profile-image {
   padding: 2rem;
 }
 
-main .card .potato-image {
+main .card .idaho-flag {
   float: left;
   padding: 2rem;
+  margin: 1rem 0rem;
+  font-style: italic;
+}
+
+figcaption {
+  padding-top: .5rem;
 }
 
 main .card li {
   align-items: center;
   padding: 0.5rem 1rem;
   list-style-position: inside;
+}
+
+main .web-dev-links {
+  font-family: Albert Sans, Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 80%;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+main .idaho-paragraph {
+  max-width: 75%;
 }
 
 p {
