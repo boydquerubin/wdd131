@@ -169,3 +169,7 @@ footer {
   text-align: center;
   grid-column: 1 / 4;
 }
+
+footer p {
+  padding: 0.5rem;
+}
