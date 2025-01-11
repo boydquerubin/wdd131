@@ -50,7 +50,7 @@ nav {
 }
 
 img {
-  max-width: 200px;
+  width: 200px;
   height: auto;
 }
 
@@ -117,6 +117,8 @@ main .card {
 main .card .profile-image {
   float: right;
   padding: 2rem;
+  width: 200px;
+  height: auto;
 }
 
 main .card .idaho-flag {
@@ -124,6 +126,8 @@ main .card .idaho-flag {
   padding: 2rem;
   margin: 1rem 0rem;
   font-style: italic;
+  width: 200px;
+  height: auto;
 }
 
 figcaption {
