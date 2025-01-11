@@ -36,6 +36,7 @@ nav {
 .navigation li {
 	flex: 1 1 auto;
 }
+
 .navigation a {
 	display: block;
 	color: #eee;
