@@ -1,0 +1,49 @@
+body {
+  font-family: Albert Sans, Arial, Helvetica, sans-serif;
+}
+
+header, main, footer {
+  max-width: 800px;
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  background-color: rgb(20, 255, 216);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+section {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.navigation {
+  font-family: Albert Sans, Arial, Helvetica, sans-serif;
+  list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #000000;
+	align-items: center;  
+  overflow: hidden;
+}
+
+.navigation li {
+	flex: 1 1 auto;
+}
+
+.navigation a {
+	display: block;
+	color: var(--baby-powder);
+	padding: 1.5rem;
+	text-decoration: none;
+	text-align: center;
+}
+
+.navigation a:hover {
+	font-weight: 700;
+  transform: scale(1.1);
+}
