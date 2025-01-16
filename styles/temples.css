@@ -12,7 +12,7 @@ header, main, footer {
 
 main {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 1rem;
 }
 
@@ -23,6 +23,7 @@ section {
 
 .navigation {
   font-family: Albert Sans, Arial, Helvetica, sans-serif;
+  justify-content: space-evenly;
   list-style-type: none;
 	display: flex;
 	flex-wrap: wrap;
@@ -47,3 +48,35 @@ section {
 	font-weight: 700;
   transform: scale(1.1);
 }
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: relative;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.open a {
+	display: block;
+}
+
+.active::before {
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
+
+/* .stuff {
+	margin: .5m;
+	border: 1px solid rgba(0,0,0,.1);
+	background-color: #bed;
+	max-width: 580px;
+	height: 100vh;	
+} */
