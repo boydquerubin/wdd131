@@ -1,82 +1,100 @@
-body {
+* {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-align: center;
+  --oxford-blue: #091c2f;
+  --cinnabar: #fc4a2d;
+  --baby-powder: #f9fcfa;
+  --process-cyan: #19b8ee;
+  --fire-engine-red: #d31818;
+}
+
+h1 {
   font-family: Albert Sans, Arial, Helvetica, sans-serif;
-}
-
-header, main, footer {
-  max-width: 800px;
-  margin: 1rem auto;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: var(--baby-powder);
+  background-color: #091c2f;
   padding: 1rem;
-  background-color: rgb(20, 255, 216);
 }
 
-main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 1rem;
-}
-
-section {
+h2 {
+  font-family: Albert Sans, Arial, Helvetica, sans-serif;
+  color: var(--oxford-blue);
+  text-align: center;
   padding: 1rem;
-  background-color: #fff;
+}
+
+header {
+  background-color: var(--oxford-blue);
+}
+
+/* Mobile View ***************/
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: var(--oxford-blue);
+	color: #000;
+}
+
+#menu::before {
+	content: "≡";
+    color: var(--baby-powder);
+}
+
+nav {
+  padding: 0 1rem; /* Add some padding for spacing */
 }
 
 .navigation {
-  font-family: Albert Sans, Arial, Helvetica, sans-serif;
-  justify-content: space-evenly;
-  list-style-type: none;
-	display: flex;
-	flex-wrap: wrap;
-	background-color: #000000;
-	align-items: center;  
+	list-style: none;
+	margin: 0 auto;
+  padding: 0;
+	max-width: 760px;
   overflow: hidden;
 }
 
 .navigation li {
-	flex: 1 1 auto;
+	display: none;
 }
 
 .navigation a {
-	display: block;
-	color: var(--baby-powder);
-	padding: 1.5rem;
-	text-decoration: none;
-	text-align: center;
+  font-family: Albert Sans, Arial, Helvetica, sans-serif;
+  display: block;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  text-decoration: none;
+  color: var(--baby-powder);
+  background-color: var(--oxford-blue);
+  font-weight: 700;
+  transition: 0.5s;
+  font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-.navigation a:hover {
-	font-weight: 700;
+.navigation a:hover, navigation a:active {
+	color: var(--baby-powder);
+  font-weight: 700;
   transform: scale(1.1);
 }
 
-#menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: #000;
- 	position: relative;
-}
-
-#menu::before {
-	content: "☰";
-}
-
-#menu.open::before {
-	content: "❎";
-}
-
-.open a {
+.show li {
 	display: block;
 }
 
-.active::before {
-	content: "📍";  /* just a wayfinding symbol for the user */
+#menu.show::before {
+	content: "X";
 }
 
-/* .stuff {
-	margin: .5m;
-	border: 1px solid rgba(0,0,0,.1);
-	background-color: #bed;
-	max-width: 580px;
-	height: 100vh;	
-} */
+footer {
+  font-family: Albert Sans, Arial, Helvetica, sans-serif;
+  color: var(--baby-powder);
+  background: var(--oxford-blue);
+  padding: 1rem;
+  text-align: center;
+  grid-column: 1 / 4;
+}
