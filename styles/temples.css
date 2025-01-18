@@ -60,45 +60,41 @@ footer {
   content: "X";
 }
 
+nav {
+  padding: 0 1rem;
+}
 
-@media screen and (max-width: 40em) {
-  nav {
-    padding: 0 1rem;
-  }
+.navigation {    
+  font-family: Albert Sans, Arial, Helvetica, sans-serif;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 760px;
+  overflow: hidden;
+}
 
-  .navigation {
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
-    max-width: 760px;
-    overflow: hidden;
-  }
+.navigation li {
+  display: none;
+}
 
-  .navigation li {
-    display: none;
-  }
+.navigation a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  text-decoration: none;    
+  font-size: large;
+  color: var(--baby-powder);
+  background-color: var(--oxford-blue);
+  transition: 0.5s;
+  text-align: center;
+}
 
-  .navigation a {
-    font-family: Albert Sans, Arial, Helvetica, sans-serif;
-    display: block;
-    padding: 0.5rem 1rem;
-    text-align: left;
-    text-decoration: none;
-    color: var(--baby-powder);
-    background-color: var(--oxford-blue);
-    font-weight: 700;
-    transition: 0.5s;
-    font-size: clamp(1rem, 2vmin, 1.5rem);
-    text-align: center;
-  }
+.navigation a:hover, navigation a:active {
+  color: var(--baby-powder);
+  font-weight: 800;
+  transform: scale(1.1);
+}
 
-  .navigation a:hover, navigation a:active {
-    color: var(--baby-powder);
-    font-weight: 700;
-    transform: scale(1.1);
-  }
-
-  .show li {
-    display: block;
-  }
+.show li {
+  display: block;
 }

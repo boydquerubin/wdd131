@@ -1,4 +1,23 @@
 @media screen and (min-width: 40em) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+    
+  h2 {
+    grid-column: span 3;
+    margin-bottom: 20px;
+  }
+  
+  :root {
+    --oxford-blue: #091c2f;
+    --baby-powder: #f9fcfa;
+    --process-cyan: #19b8ee;
+  }
+
   header {
     display: flex;
     align-items: center;
@@ -12,10 +31,12 @@
   }
 
   .navigation {
+    font-family: Albert Sans, Arial, Helvetica, sans-serif;
     display: flex;
     list-style: none;
     margin: 0.5rem;
     padding: 0;
+    overflow: hidden;
   }
 
   .navigation li {
@@ -27,47 +48,59 @@
     text-align: center;
     text-decoration: none;
     color: var(--baby-powder);
-    font-weight: 700;
     transition: 0.5s;
-    font-size: clamp(1rem, 2vmin, 1.5rem);
+    font-size: large;
+    padding: 0.5rem 1rem;
   }
 
   .navigation a:hover,
   .navigation a:active {
-    color: var(--process-cyan);
+    color: var(--baby-powder);
+    font-weight: 800;
     transform: scale(1.1);
   }
- 
-	#menu {
-		display: none;
-	}
 
+  #menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
   main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
+
   h2 {
-    grid-column: span 3;
-    margin-bottom: 20px;
+    grid-column: span 2;
   }
-  
-  figure {
-    margin: 0;
+}
+
+@media screen and (max-width: 75em) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  figure img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+
+  h2 {
+    grid-column: span 2;
   }
-  
-  figcaption {
-    margin-top: 8px;
-    font-size: 1rem;
-    color: #555;
-  }  
-};
+}
+
+
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  padding-bottom: 1rem;
+}
