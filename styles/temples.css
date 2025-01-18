@@ -5,12 +5,9 @@
 }
 
 :root {
-  --text-align: center;
   --oxford-blue: #091c2f;
-  --cinnabar: #fc4a2d;
   --baby-powder: #f9fcfa;
   --process-cyan: #19b8ee;
-  --fire-engine-red: #d31818;
 }
 
 h1 {
@@ -31,65 +28,6 @@ header {
   background-color: var(--oxford-blue);
 }
 
-/* Mobile View ***************/
-#menu {
-	display: block;
-	font-size: 2rem;
-	font-weight:700;
-	text-decoration: none;
-	padding: .5rem .75rem;
-	background-color: var(--oxford-blue);
-	color: #000;
-}
-
-#menu::before {
-	content: "≡";
-    color: var(--baby-powder);
-}
-
-nav {
-  padding: 0 1rem; /* Add some padding for spacing */
-}
-
-.navigation {
-	list-style: none;
-	margin: 0 auto;
-  padding: 0;
-	max-width: 760px;
-  overflow: hidden;
-}
-
-.navigation li {
-	display: none;
-}
-
-.navigation a {
-  font-family: Albert Sans, Arial, Helvetica, sans-serif;
-  display: block;
-  padding: 0.5rem 1rem;
-  text-align: left;
-  text-decoration: none;
-  color: var(--baby-powder);
-  background-color: var(--oxford-blue);
-  font-weight: 700;
-  transition: 0.5s;
-  font-size: clamp(1rem, 2vmin, 1.5rem);
-}
-
-.navigation a:hover, navigation a:active {
-	color: var(--baby-powder);
-  font-weight: 700;
-  transform: scale(1.1);
-}
-
-.show li {
-	display: block;
-}
-
-#menu.show::before {
-	content: "X";
-}
-
 footer {
   font-family: Albert Sans, Arial, Helvetica, sans-serif;
   color: var(--baby-powder);
@@ -97,4 +35,70 @@ footer {
   padding: 1rem;
   text-align: center;
   grid-column: 1 / 4;
+}
+
+/* Mobile View Hamburger */
+#menu {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  background-color: var(--oxford-blue);
+  color: var(--baby-powder);
+  text-decoration: none;
+  position: absolute;
+  right: 1rem;
+  top: 1rem
+}
+
+#menu::before {
+  content: "≡";
+}
+
+#menu.show::before {
+  content: "X";
+}
+
+
+@media screen and (max-width: 40em) {
+  nav {
+    padding: 0 1rem;
+  }
+
+  .navigation {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 760px;
+    overflow: hidden;
+  }
+
+  .navigation li {
+    display: none;
+  }
+
+  .navigation a {
+    font-family: Albert Sans, Arial, Helvetica, sans-serif;
+    display: block;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    text-decoration: none;
+    color: var(--baby-powder);
+    background-color: var(--oxford-blue);
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+    text-align: center;
+  }
+
+  .navigation a:hover, navigation a:active {
+    color: var(--baby-powder);
+    font-weight: 700;
+    transform: scale(1.1);
+  }
+
+  .show li {
+    display: block;
+  }
 }
