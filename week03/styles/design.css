@@ -39,6 +39,7 @@ article p {
 	color: #ffffff;
 	background-color: #702963;
   padding: 0 1rem;
+  grid-column: span 2;
 }
 
 footer {
