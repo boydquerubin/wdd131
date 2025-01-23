@@ -1,0 +1,26 @@
+* {
+  font-family: Albert Sans, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+  --oxford-blue: #091c2f;
+  --baby-powder: #f9fcfa;
+  --process-cyan: #19b8ee;
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem;
+  color: var(--baby-powder);
+  background-color: var(--oxford-blue);
+}
+
+footer {
+  color: var(--baby-powder);
+  background: var(--oxford-blue);
+  padding: 1rem;
+  text-align: center;
+  grid-column: 1 / 4;
+}
