@@ -4,32 +4,9 @@
 	padding: 0;
 }
 
-:root {
-  --oxford-blue: #091c2f;
-  --baby-powder: #f9fcfa;
-  --process-cyan: #19b8ee;
-}
-
-h1 {
-  text-align: center;
-  padding: 1rem;
-  color: var(--baby-powder);
-  background-color: var(--oxford-blue);
-}
-
-footer {
-  color: var(--baby-powder);
-  background: var(--oxford-blue);
-  padding: 1rem;
-  text-align: center;
-  grid-column: 1 / 4;
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
-}
-
-picture, img {
-  display: block;
+@media only screen and (min-width: 500px) {
+  .hero img {
+      height: 100%; /* Allow full height for landscape images */
+      object-fit: cover; /* Ensures no distortion while filling the space */
+  }
 }

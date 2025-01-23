@@ -7,6 +7,7 @@
   <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Boyd Querubin - Place">
   <meta name="author" content="Boyd Querubin">
   <link href="styles/place.css" rel="stylesheet">
+  <link href="styles/place-large.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Audiowide&display=swap" rel="stylesheet">
@@ -20,10 +21,31 @@
   <main>
     <div class="hero">
       <picture>
-        <source srcset="images/fuji-large.webp" media="(min-width: 100px)">
+        <source srcset="images/fuji-large.webp" media="(min-width: 1000px)">
         <source srcset="images/fuji-medium.webp" media="(min-width: 500px)">
-        <img src="images/fuji-small.webp" alt="Albuquerque Temple" width="500" height="250">
+        <img src="images/fuji-small.webp" alt="Fuji" width="500" height="250">
       </picture>
+    </div>
+    <section class="information">
+      <h2>Information</h2>
+      <ol>
+        <li><label>Area:</label> 377,975 km²</li>
+        <li><label>Population:</label>: ~124 million</li>
+        <li><label>Capital:</label> Tokyo</li>
+        <li><label>Languages:</label> Japanese</li>
+        <li><label>Currency:</label> Japanese Yen</li>
+        <li><label>Time Zone:</label> JST, UTC+9</li>
+        <li><label>Calling Code:</label> +81</li>
+        <li><label>Internet TLD:</label> .jp</li>
+      </ol>
+    </section>
+    <div class="weather">
+      <h2>Data</h2>
+      <img src="images/weather-icon.svg" alt="Weather Icon" width="50" height="50">
+      <p id="temperature">Temperature: -- °F</p>
+      <p id="conditions">Conditions: --</p>
+      <p id="wind">Wind: -- mph</p>
+      <p id="windChill">Wind Chill: -- °F</p>
     </div>
   </main>
   <footer>
