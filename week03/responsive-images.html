@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Responsive Images - Boyd Querubin</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Boyd Querubin - Responsive Images">
+  <meta name="author" content="Boyd Querubin">
+  <link href="styles/responsive-images.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Audiowide&display=swap" rel="stylesheet">
+  <!-- <script src="scripts/.js" defer></script> -->
+</head>
+<body>
+  <header>
+    <h1>Responsive Images</h1>
+  </header>
+  <main>
+    <div class="hero">
+      <picture>
+        <source srcset="images/albuquerque-temple-large.webp" media="min-width: 100px">
+        <source srcset="images/albuquerque-temple-medium.webp" media="min-width: 500px">
+        <img src="images/albuquerque-temple-small.webp" alt="Albuquerque Temple" width="500" height="250">
+      </picture>
+    </div>
+  </main>
+  <footer>
+    Footer Content
+  </footer>
+</body>
+</html>
