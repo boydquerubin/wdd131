@@ -96,6 +96,11 @@ picture, img {
   width: 200px;
 }
 
+.weather .icon {
+  position: absolute;
+  top: 12.5%;
+  right: 50%;
+}
 
 
 @media only screen and (min-width: 40em) {  
