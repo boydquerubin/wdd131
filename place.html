@@ -6,6 +6,7 @@
   <title>WDD 131 - Place - Boyd Querubin</title>
   <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Boyd Querubin - Place">
   <meta name="author" content="Boyd Querubin">
+  <link href="styles/place-large.css" rel="stylesheet">
   <link href="styles/place.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,42 +26,42 @@
         <img src="images/hiroshima.webp" alt="Fuji">
       </picture>
     </div>
-    <section class="information">
-      <h2>Information</h2>
-      <div class="info-card">
-        <table class="info-table">
+    <section class="data">
+      <h2>Data</h2>
+      <div class="data-card">
+        <table class="data-table">
           <tbody>
             <tr>
-              <td class="info">Area:</td>
-              <td class="info-value">377,975 km²</td>
+              <td class="data-key">Area:</td>
+              <td class="data-value">377,975 km²</td>
             </tr>
             <tr>
-              <td class="info">Population:</td>
-              <td class="info-value">~124 million</td>
+              <td class="data-key">Population:</td>
+              <td class="data-value">~124 million</td>
             </tr>
             <tr>
-              <td class="info">Capital:</td>
-              <td class="info-value">Tokyo</td>
+              <td class="data-key">Capital:</td>
+              <td class="data-value">Tokyo</td>
             </tr>
             <tr>
-              <td class="info">Languages:</td>
-              <td class="info-value">Japanese</td>
+              <td class="data-key">Languages:</td>
+              <td class="data-value">Japanese</td>
             </tr>
             <tr>
-              <td class="info">Currency:</td>
-              <td class="info-value">Japanese Yen</td>
+              <td class="data-key">Currency:</td>
+              <td class="data-value">Japanese Yen</td>
             </tr>
             <tr>
-              <td class="info">Time Zone:</td>
-              <td class="info-value">JST, UTC+9</td>
+              <td class="data-key">Time Zone:</td>
+              <td class="data-value">JST, UTC+9</td>
             </tr>
             <tr>
-              <td class="info">Calling Code:</td>
-              <td class="info-value">+81</td>
+              <td class="data-key">Calling Code:</td>
+              <td class="data-value">+81</td>
             </tr>
             <tr>
-              <td class="info">Internet TLD:</td>
-              <td class="info-value">.jp</td>
+              <td class="data-key">Internet TLD:</td>
+              <td class="data-value">.jp</td>
             </tr>
           </tbody>
         </table>
@@ -68,16 +69,31 @@
     </section>
     <section class="weather">
       <div class="weather-heading">
-        <h2>Data</h2>
-        <img class="icon" src="images/weather-icon.svg" alt="Weather Icon" width="50" height="50">
+        <h2>Weather</h2>
+        <img class="icon" src="images/weather-icon.svg" alt="Weather Icon">
       </div>
       <div class="weather-card">
-        <table class="weather-table">Table</table>
+        <table class="weather-table">
+          <tbody>
+            <tr>
+              <td class="weather-key">Temperature: </td>
+              <td class="weather-value"> -- °F</td>
+            </tr>
+            <tr>
+              <td class="weather-key">Conditions: </td>
+              <td class="weather-value"> Clear Skies </td>
+            </tr>
+            <tr>
+              <td class="weather-key">Wind: </td>
+              <td class="weather-value"> -- mph</td>
+            </tr>
+            <tr>
+              <td class="weather-key">Wind Chill: </td>
+              <td class="weather-value"> -- °F</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <p id="temperature">Temperature: -- °F</p>
-      <p id="conditions">Conditions: --</p>
-      <p id="wind">Wind: -- mph</p>
-      <p id="windChill">Wind Chill: -- °F</p>
     </section>
   </main>
   <footer>
