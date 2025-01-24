@@ -39,8 +39,8 @@ picture, img {
 .information {
   display: grid;
   position: absolute;
-  top: 10em;
-  left: 5em;
+  top: 20%;
+  left: 5%;
   list-style-type: none;
   background-color: rgba(9, 28, 47, 0.7);
   color: var(--baby-powder);
@@ -72,10 +72,10 @@ picture, img {
 }
 
 .weather {
-  display: grid;
+  display: block;
   position: absolute;
-  top: 20em;
-  right: 5em;
+  top: 30%;
+  right: 5%;
   background-color: rgba(9, 28, 47, 0.7);
   color: var(--baby-powder);
   padding: 2rem;
