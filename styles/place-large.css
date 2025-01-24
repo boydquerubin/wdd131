@@ -68,12 +68,25 @@
   .weather {
     display: grid;
     position: absolute;
-    bottom: 10em;
+    top: 20em;
     right: 5em;
-    background-color: var(--baby-powder);
-    color: var(--oxford-blue);
+    background-color: rgba(9, 28, 47, 0.7);
+    color: var(--baby-powder);
     padding: 2rem;
     border-radius: 15px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;    
+    border: 5px solid var(--baby-powder);
+  }
+
+  .weather h2 {
+    font-family: Audiowide, Arial, Helvetica, sans-serif;
+    background-color: var(--process-cyan);
+    color: var(--oxford-blue);
+    padding: 1rem;
+    border-radius: 15px;
+    position: relative;
+    left: -50px;
+    top: -10px;
+    width: 200px;
   }
 }
