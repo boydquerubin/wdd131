@@ -7,7 +7,6 @@
   <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Boyd Querubin - Place">
   <meta name="author" content="Boyd Querubin">
   <link href="styles/place.css" rel="stylesheet">
-  <link href="styles/place-large.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Audiowide&display=swap" rel="stylesheet">
@@ -21,9 +20,9 @@
   <main>
     <div class="hero">
       <picture>
-        <source srcset="images/fuji-large.webp" media="(min-width: 1000px)">
-        <source srcset="images/fuji-medium.webp" media="(min-width: 500px)">
-        <img src="images/fuji-small.webp" alt="Fuji" width="500" height="250">
+        <source media="(min-width: 900px)" srcset="images/fuji.webp">
+        <source media="(min-width: 450px)" srcset="images/city.webp">
+        <img src="images/hiroshima.webp" alt="Fuji">
       </picture>
     </div>
     <section class="information">
@@ -39,14 +38,19 @@
         <li><label>Internet TLD:</label> .jp</li>
       </ol>
     </section>
-    <div class="weather">
-      <h2>Data</h2>
-      <img src="images/weather-icon.svg" alt="Weather Icon" width="50" height="50">
+    <section class="weather">
+      <div class="weather-heading">
+        <h2>Data</h2>
+        <img class="icon" src="images/weather-icon.svg" alt="Weather Icon" width="50" height="50">
+      </div>
+      <div class="weather-card">
+        <table class="weather-table">Table</table>
+      </div>
       <p id="temperature">Temperature: -- °F</p>
       <p id="conditions">Conditions: --</p>
       <p id="wind">Wind: -- mph</p>
       <p id="windChill">Wind Chill: -- °F</p>
-    </div>
+    </section>
   </main>
   <footer>
     <p>&copy; <span id="currentyear"></span> Boyd Querubin, Meridian, ID</p>
