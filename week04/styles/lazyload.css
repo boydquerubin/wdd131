@@ -1,0 +1,42 @@
+@keyframes fadeFromBlack {
+  0% {
+    opacity: 0;
+    background-color: black;
+  }
+  100% {
+    opacity: 1;
+    background-color: transparent;
+  }
+}
+
+h1, footer{
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: auto;
+  opacity: 0;
+  padding: 1rem;
+  animation: fadeFromBlack 1.5s ease-in-out forwards;
+}
+
+img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+img:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+img:nth-child(3) {
+  animation-delay: 1s;
+}
+
+img:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+img:nth-child(5) {
+  animation-delay: 2s;
+}

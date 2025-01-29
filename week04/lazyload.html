@@ -6,16 +6,24 @@
   <title>WDD 131 - Lazy Loading - Boyd Querubin</title>
   <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Boyd Querubin - Lazy Loading">
   <meta name="author" content="Boyd Querubin">
-  <link href="styles/design.css" rel="stylesheet">
+  <link href="styles/lazyload.css" rel="stylesheet">
+  <script src="/scripts/getdates.js" defer></script>
 </head>
 <body>
   <header>
     <h1>Lazy Loading</h1>
   </header>
   <main>
+    <img src="images/hiroshima.webp" alt="hiroshima" loading="lazy" width="400" height="600">
+    <img src="images/hiroshima.webp" alt="hiroshima" loading="lazy" width="400" height="600">
+    <img src="images/hiroshima.webp" alt="hiroshima" loading="lazy" width="400" height="600">
+    <img src="images/hiroshima.webp" alt="hiroshima" loading="lazy" width="400" height="600">
+    <img src="images/hiroshima.webp" alt="hiroshima" loading="lazy" width="400" height="600">
+    <img src="images/hiroshima.webp" alt="hiroshima" loading="lazy" width="400" height="600">
   </main>
   <footer>
-    Footer Content
+    <p>&copy; <span id="currentyear"></span> Boyd Querubin, Meridian, ID</p>
+    <p id="lastModified"></p>
   </footer>
 </body>
 </html>
