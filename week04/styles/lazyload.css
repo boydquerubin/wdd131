@@ -16,6 +16,6 @@ img {
   display: block;
   margin: auto;
   padding: 1rem;
-  animation: fade 2s;  
-  background-color: black;
+  animation: fade 3s;  
+  background: black;
 }
