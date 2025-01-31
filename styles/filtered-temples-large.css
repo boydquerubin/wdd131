@@ -1,6 +1,7 @@
 /* desktop */
 @media screen and (min-width: 40em) {
-  main {
+  .temple-cards {
+    font-family: Albert Sans, Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -69,7 +70,7 @@
 
 /* mobile */
 @media screen and (max-width: 37.5em) {
-  main {
+  .temple-cards {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -80,7 +81,7 @@
 
 /* tablets */
 @media screen and (max-width: 75em) {
-  main {
+  .temple-cards {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -89,20 +90,8 @@
   }
 }
 
-figure {
-  margin: 0;
-}
-
-figure img {
+ img {
   width: 100%;
   height: auto;
   border-radius: 8px;
-}
-
-figcaption {
-  margin-top: 8px;
-  font-size: 1rem;
-  color: #555;
-  text-align: center;
-  padding-bottom: 1rem;
 }
