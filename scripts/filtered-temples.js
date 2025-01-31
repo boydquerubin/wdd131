@@ -27,12 +27,12 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
   },  
   {
-    templeName: "Mexico City Mexico",
-    location: "Mexico City, Mexico",
-    dedicated: "1983, December, 2",
-    area: 116642,
+    templeName: "Mesa Arizona Temple",
+    location: "Mesa, Arizona, United States",
+    dedicated: "1927, October, 23",
+    area: 75000,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mesa-arizona/400x250/mesa_arizona_temple_main.jpeg"
   },
   {
     templeName: "Yigo Guam",
@@ -92,27 +92,27 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/apia-samoa/400x250/apia-samoa-temple-lds-460475-wallpaper.jpg"
   },
 	{
-    templeName: "Aba Nigeria",
-    location: "Aba, Nigeria",
-    dedicated: "2005, August, 7",
-    area: 11500,
+    templeName: "Perth Australia Temple",
+    location: "Yokine, Western Australia",
+    dedicated: "2001, April, 28",
+    area: 10700,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/perth-australia/400x250/perth-australia-temple-1562613-wallpaper.jpg"
   },
   {
-    templeName: "Manti Utah",
-    location: "Manti, Utah, United States",
-    dedicated: "1888, May, 21",
-    area: 74792,
+    templeName: "Durban South Africa Temple",
+    location: "Umhlanga, KwaZulu-Natal",
+    dedicated: "2020, February, 16",
+    area: 19860,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/durban-south-africa/400x250/4-5fcf64b0979ac41f7197d049ea8c4ffad88cd1b4.jpg"
   }, 
 ];
 
-createTempleCard();
+createTempleCard(temples);
 
-function createTempleCard() {
-	temples.forEach(temple => {
+function createTempleCard(filteredTemples) {
+	filteredTemples.forEach(temple => {
 		let card = document.createElement("section");
 		let name = document.createElement("h3");
 		let location = document.createElement("p");
@@ -137,3 +137,34 @@ function createTempleCard() {
 		document.querySelector(".temple-cards").appendChild(card);
 	})
 };
+
+const homeLink = document.querySelector("#home");
+const oldLink = document.querySelector("#old");
+const newLink = document.querySelector("#new");
+const largeLink = document.querySelector("#large");
+const smallLink = document.querySelector("#small");
+
+homeLink.addEventListener("click", () => {
+  document.querySelector(".temple-cards").innerHTML = "";
+  createTempleCard(temples);
+})
+
+oldLink.addEventListener("click", () => {
+  document.querySelector(".temple-cards").innerHTML = "";
+  createTempleCard(temples.filter(temple => temple.dedicated < ("1900")));
+})
+
+newLink.addEventListener("click", () => {
+  document.querySelector(".temple-cards").innerHTML = "";
+  createTempleCard(temples.filter(temple => temple.dedicated > ("2000")));
+})
+
+largeLink.addEventListener("click", () => {
+  document.querySelector(".temple-cards").innerHTML = "";
+  createTempleCard(temples.filter(temple => temple.area > 90000));
+})
+
+smallLink.addEventListener("click", () => {
+  document.querySelector(".temple-cards").innerHTML = "";
+  createTempleCard(temples.filter(temple => temple.area < 100000));
+})
