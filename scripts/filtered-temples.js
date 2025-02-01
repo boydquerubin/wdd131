@@ -153,20 +153,24 @@ homeLink.addEventListener("click", () => {
 
 oldLink.addEventListener("click", () => {
   document.querySelector(".temple-cards").innerHTML = "";
+  document.querySelector("h2").innerHTML = "Old";
   createTempleCard(temples.filter(temple => temple.dedicated < ("1900")));
 })
 
 newLink.addEventListener("click", () => {
   document.querySelector(".temple-cards").innerHTML = "";
+  document.querySelector("h2").innerHTML = "New";
   createTempleCard(temples.filter(temple => temple.dedicated > ("2000")));
 })
 
 largeLink.addEventListener("click", () => {
   document.querySelector(".temple-cards").innerHTML = "";
+  document.querySelector("h2").innerHTML = "Large";
   createTempleCard(temples.filter(temple => temple.area > 90000));
 })
 
 smallLink.addEventListener("click", () => {
   document.querySelector(".temple-cards").innerHTML = "";
+  document.querySelector("h2").innerHTML = "Small";
   createTempleCard(temples.filter(temple => temple.area < 100000));
 })
