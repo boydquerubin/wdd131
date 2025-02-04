@@ -1,0 +1,29 @@
+* {
+  font-family: Sunflower, Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --cream: #fffcf2;
+  --lgray: #ccc5b9;
+  --dgray: #403d39;
+  --charcoal: #252422;
+  --orange: #eb5e28;
+}
+
+header {
+  color: var(--charcoal);
+  background-color: var(--orange);
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
+  color: var(--cream);
+  background-color: var(--charcoal);
+  padding: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: Waterfall, Arial, Helvetica, sans-serif;
+}
