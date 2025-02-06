@@ -14,7 +14,6 @@ header {
   color: var(--charcoal);
   background-color: var(--orange);
   padding: 1rem;
-  text-align: center;
 }
 
 footer {
@@ -26,4 +25,40 @@ footer {
 
 h2 {
   font-family: Waterfall, Arial, Helvetica, sans-serif;
+  color: var(--charcoal);
+}
+
+#charcoal {
+  color: #fff;
+  background-color: var(--charcoal);
+  max-width: 20%;
+  padding: 1rem;  
+}
+
+#orange {
+  color: #000;
+  background-color: var(--orange);
+  max-width: 20%;
+  padding: 1rem;
+}
+
+#lgray {
+  color: #000;
+  background-color: var(--lgray);
+  max-width: 20%;
+  padding: 1rem;
+}
+
+#dgray {
+  color: #fff;
+  background-color: var(--dgray);
+  max-width: 20%;
+  padding: 1rem;
+}
+
+#cream {
+  color: #000;
+  background-color: var(--cream);
+  max-width: 20%;
+  padding: 1rem;
 }
