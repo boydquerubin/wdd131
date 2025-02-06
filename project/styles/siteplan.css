@@ -11,7 +11,7 @@
 }
 
 header {
-  color: var(--charcoal);
+  color: var(--cream);
   background-color: var(--orange);
   padding: 1rem;
 }
@@ -36,7 +36,7 @@ h2 {
 }
 
 #orange {
-  color: #000;
+  color: #fff;
   background-color: var(--orange);
   max-width: 20%;
   padding: 1rem;
