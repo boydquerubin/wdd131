@@ -40,10 +40,10 @@ footer {
 }
 
 .product-form fieldset {
-  background-color: var(--Honeydew);
+  background-color: var(--baby-powder);
   margin: .5rem 0;
   border: 1px solid #ddd;
-  border-radius: 6px;
+  border-radius: 5px;
   padding:.5rem 2%;
 }
 
@@ -76,12 +76,13 @@ footer {
 
 .product-form input[type="submit"] {
   background-color: var(--process-cyan);
-  border-radius: 6px;
-  box-shadow: 1px 1px 2px #b6b5b5;
-  padding: .8rem;
-  width: 96%;
-  max-width: 400px;
-  margin: 2rem;
+  color: var(--oxford-blue);
+  border-radius: 5px;
+  padding: 1rem;
+  max-width: 100%;
+  width: 100%;
+  font-weight: bold;
+  font-size: large;
 }
 
 .product-form input[type="text"],
@@ -89,7 +90,7 @@ footer {
 .product-form select,
 .product-form textarea {
   border: solid 1px #999;
-  border-radius: 6px;
+  border-radius: 5px;
   padding: .75rem;
   width: 100%;
   max-width: 400px;
