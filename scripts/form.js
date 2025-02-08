@@ -1,3 +1,6 @@
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+
 const products = [
   {
     id: "fc-1888",
