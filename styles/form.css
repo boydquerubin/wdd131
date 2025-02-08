@@ -62,12 +62,6 @@ footer {
   font-weight: bold;
 }
 
-.product-form p {
-  font-style: italic;
-  font-size: small;
-  padding-bottom: .5rem;
-}
-
 .product-form input[type="radio"],
 .product-form input[type="checkbox"]{
   margin-right: .5rem;
