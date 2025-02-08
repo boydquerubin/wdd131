@@ -101,11 +101,13 @@ footer {
   margin-left: .5rem;
 }
 
-.product-form input:required {
+.product-form input:required,
+.product-form select:required {
   border-left: solid 8px red;
 }
 
-.product-form input:required:valid {
+.product-form input:required:valid,
+.product-form select:required:valid {
   border-left: solid 8px green;
 }
 
