@@ -15,18 +15,14 @@
 header {
   color: var(--cream);
   background-color: var(--orange);
-  text-align: center;
+  text-align: center;  
+  grid-column: 1 / 4;
 }
 
 body {
   display: grid;
   height: 100vh;
   grid-template: auto 1fr auto / auto 1fr auto;
-}
-
-header {
-  background: var(--orange);
-  grid-column: 1 / 4;
 }
 
 nav {
@@ -55,6 +51,11 @@ nav {
 
 .navigation a:hover {
 	font-weight: 700;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
 }
 
 footer {
