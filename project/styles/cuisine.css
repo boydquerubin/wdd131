@@ -68,7 +68,8 @@ h1 {
 
 h2 {
   font-family: Waterfall, Arial, Helvetica, sans-serif;
-  color: var(--charcoal);
+  color: var(--charcoal);  
+  font-size: xx-large;
 }
 
 main {
