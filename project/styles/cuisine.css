@@ -54,13 +54,6 @@ nav {
 	font-weight: 700;
 }
 
-.hero img {
-  height: auto;
-  border-radius: 10px;
-  margin: 2rem;
-  /* border: 5px solid var(--charcoal); */
-}
-
 footer {
   color: var(--cream);
   background-color: var(--charcoal);
@@ -78,29 +71,29 @@ h2 {
   color: var(--charcoal);
 }
 
-#charcoal {
-  color: #fff;
-  background-color: var(--charcoal);
+main {
+  grid-template-columns: repeat(2, 1fr);  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
 }
 
-#orange {
-  color: #fff;
-  background-color: var(--orange);
-  padding: 1rem;
+figure {
+  margin: 0;
 }
 
-#lgray {
-  color: #000;
-  background-color: var(--lgray);
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
-#dgray {
-  color: #fff;
-  background-color: var(--dgray);
+figcaption {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  padding-bottom: 1rem;
 }
-
-#cream {
-  color: #000;
-  background-color: var(--cream);
-}
-
