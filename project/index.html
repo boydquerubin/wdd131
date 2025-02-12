@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A Taste of Filipino Home</title>
-  <meta name="description" content="A Taste of Filipino Home">
+  <meta name="description" content="Experience the rich flavors of Filipino cuisine, bringing a taste of home to every bite.">
   <meta name="author" content="Boyd Querubin">
   <link href="styles/style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,27 +19,42 @@
       <ul class="navigation">
         <li><a href="index.html" title="Home">Home</a></li>
         <li><a href="cuisine.html" title="Cuisine">Cuisine</a></li>
-        <li><a href="cuisine.html" title="Contact Us">Contact</a></li>
+        <li><a href="contact.html" title="Contact Us">Contact</a></li>
       </ul>
     </nav>
   </header>
+  
   <main>
-    <div class="hero">
+    <section class="hero">
       <picture>
         <source media="(min-width: 900px)" srcset="images/filo-landing.webp">
-        <source media="(min-width: 450px)" srcset="images/filo-landing.webp">
-        <img src="images/filo-landing.webp" alt="Fuji">
-      </picture>     
-      <section class="card">
-        <img src="images/pandesal.webp" alt="pandesal">
-      </section>
-      <section class="card">
-        <img src="images/liempo.webp" alt="pandesal">
-      </section>
-      <section class="card">
-        <img src="images/kwek.webp" alt="pandesal">
-      </section>
+        <img src="images/filo-landing.webp" alt="A delicious spread of Filipino food">
+      </picture>
+      <div class="hero-text">
+        <p>Experience the warmth and richness of Filipino cuisine, where every dish tells a story of tradition, love, and community. From the savory Adobo to the sweet delight of Halo-Halo, embark on a flavorful journey through the heart of the Philippines.</p>
+        <a href="cuisine.html" class="cta-button">Explore Cuisine</a>
+      </div>
+    </section> 
+
+    <section class="card-container">
+      <div class="card">
+        <img src="images/pandesal.webp" alt="Pandesal">
+        <h2>Pandesal</h2>
+        <p>A soft, slightly sweet bread roll, best enjoyed with coffee or hot chocolate.</p>
+      </div>
+      <div class="card">
+        <img src="images/liempo.webp" alt="Liempo">
+        <h2>Liempo</h2>
+        <p>Grilled pork belly, marinated in rich flavors, served with a side of vinegar dip.</p>
+      </div>
+      <div class="card">
+        <img src="images/kwek.webp" alt="Kwek-Kwek">
+        <h2>Kwek-Kwek</h2>
+        <p>Deep-fried quail eggs coated in an orange batter, a popular street food delight.</p>
+      </div>
+    </section>
   </main>
+
   <footer>
     <p>&copy; <span id="currentyear"></span> Boyd Querubin, Meridian, ID</p>
     <p id="lastModified"></p>
