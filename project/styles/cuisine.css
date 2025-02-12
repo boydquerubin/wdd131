@@ -92,12 +92,15 @@ figure img {
 }
 
 figcaption {
-  margin-top: 8px;
+  max-width: 80%;
+  width: 300px;
+  margin: 0 auto;
   font-size: 1rem;
   color: #555;
   text-align: center;
   padding-bottom: 1rem;
 }
+
 
 figure img {
   transition: transform 0.3s ease-in-out;
