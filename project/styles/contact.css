@@ -1,0 +1,78 @@
+/* General Reset */
+* {
+  font-family: Sunflower, Helvetica, sans-serif;
+  box-sizing: border-box;  
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cream: #fffcf2;
+  --lgray: #ccc5b9;
+  --dgray: #403d39;
+  --charcoal: #252422;
+  --orange: #eb5e28;
+}
+
+body {
+  font-size: 16px;
+  background-color: var(--cream);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form fieldset {
+  border: none;
+  padding: 0;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input[type="submit"] {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: var(--dgray);
+}

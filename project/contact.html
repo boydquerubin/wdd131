@@ -7,6 +7,7 @@
   <meta name="description" content="Contact Page">
   <meta name="author" content="Boyd Querubin">
   <link href="styles/style.css" rel="stylesheet">
+  <link href="styles/contact.css" rel="stylesheet">  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&family=Waterfall&display=swap" rel="stylesheet">
@@ -17,13 +18,22 @@
     <h1>A Taste of Filipino Home</h1>
     <nav>
       <ul class="navigation">
-        <li><a href="#" title="Home">Home</a></li>
-        <li><a href="#" title="Services">Cuisine</a></li>
-        <li><a href="#" title="Contact Us">Contact</a></li>
+        <li><a href="index.html" title="Home">Home</a></li>
+        <li><a href="cuisine.html" title="Cuisine">Cuisine</a></li>
+        <li><a href="contact.html" title="Contact Us">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <main>   
+  <main>
+    <form method="get" action="review.html" class="contact-form">
+      <fieldset>
+        <label for="username">Username <span class="optional">(Optional)</span></label>
+        <input type="text" id="username" name="username">      
+        <label for="reviewtext">Written Review <span class="optional">(Optional)</span></label>
+        <textarea name="reviewtext" id="reviewtext" rows="6"></textarea>
+      </fieldset>
+      <input type="submit" value="Post My Review">
+  </form>
   </main>
   <footer>
     <p>&copy; <span id="currentyear"></span> Boyd Querubin, Meridian, ID</p>
