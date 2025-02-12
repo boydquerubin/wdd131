@@ -24,19 +24,35 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <form method="get" action="review.html" class="contact-form">
+
+  <main class="contact-container">
+    <section class="contact-card">
+      <h2>Contact Information</h2>
+      <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Business Hours: Mon–Fri, 9 AM – 5 PM PST</p>
+      <p>Follow us on:</p>
+      <ul class="social-links">
+        <li><a href="https://facebook.com/yourpage" target="_blank">Facebook</a></li>
+        <li><a href="https://instagram.com/yourpage" target="_blank">Instagram</a></li>
+      </ul>
+    </section>
+    
+    <form method="post" action="#" class="contact-card contact-form">
       <fieldset>
-        <label for="username">Name <span class="optional"></span></label>
-        <input type="text" id="username" name="username">
-        <label for="email">Email <span class="required"></span></label>
-        <input type="text" id="username" name="username">  
-        <label for="reviewtext">Your Message <span class="optional"></span></label>
-        <textarea name="reviewtext" id="reviewtext" rows="6"></textarea>
+        <label for="username">Name</label>
+        <input type="text" id="username" name="username" required>
+    
+        <label for="email">Email <span class="required">*</span></label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="message">Your Message</label>
+        <textarea name="message" id="message" rows="6" required></textarea>
       </fieldset>
-      <input type="submit" value="Get In Touch">
-  </form>
+      <input type="submit" value="Send Message">
+    </form>    
   </main>
+
   <footer>
     <p>&copy; <span id="currentyear"></span> Boyd Querubin, Meridian, ID</p>
     <p id="lastModified"></p>
