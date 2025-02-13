@@ -70,12 +70,15 @@ nav {
 
 main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Fix: Ensures centering */
+  justify-content: center; /* Fix: Keeps everything properly aligned */
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
+  box-sizing: border-box; /* Fix: Prevents width issues */
 }
 
 footer {
@@ -139,6 +142,40 @@ footer {
 
 @media screen and (max-width: 37.5em) {
   .dish-cards {
-    grid-template-columns: repeat(1, 1fr);
+    display: grid; /* Fix: Use grid instead of flex */
+    grid-template-columns: 1fr; /* Ensures single column */
+    justify-content: center; /* Centers the items */
+    align-items: center;
+    width: 100%; /* Fix: Prevents horizontal shifting */
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .dish-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 90%; /* Fix: Ensures proper width */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Fix: Prevents extra spacing issues */
+    margin: 0 auto; /* Fix: Forces perfect centering */
+    overflow: hidden;
+  }
+
+  .dish-card img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
   }
 }
+
+
+
+
