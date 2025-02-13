@@ -217,7 +217,7 @@ body {
   }
 
   .data h2 {
-    ont-family: Waterfall, Arial, Helvetica, sans-serif;
+    font-family: Waterfall, Arial, Helvetica, sans-serif;
     background-color: var(--lgray);
     color: var(--charcoal);
     padding: 1rem;
