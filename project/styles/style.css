@@ -86,7 +86,7 @@ body {
   max-height: 400px;
   object-fit: cover;
   border-radius: 15px;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .hero-text {
@@ -154,3 +154,135 @@ body {
 .card:hover {
   transform: scale(1.05);
 }
+
+.weather .icon {
+  max-width: 100px;
+  height: auto;
+}
+
+.weather-key {  
+  text-align: right;
+  font-weight: bold;
+}
+
+.weather-heading {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.data-card, .weather-card {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.data-table td, .weather-table td {
+  padding: 5px;
+}
+
+.data label {
+  font-weight: bold;
+}
+
+.data-key {
+  text-align: right;
+  font-weight: bold;
+}
+
+.data-value {
+  text-align: left;
+}
+
+.data-table td, .weather-table td {
+  padding: 5px;
+}
+
+@media only screen and (min-width: 56.25em) {
+  picture, img {
+    display: block;
+  }
+
+  .data {
+    display: grid;
+    position: absolute;
+    top: 25%;
+    left: 6%;
+    list-style-type: none;
+    background-color: var(--dgray);
+    color: var(--cream);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 5px solid var(--orange);
+  }
+
+  .data h2 {
+    ont-family: Waterfall, Arial, Helvetica, sans-serif;
+    background-color: var(--lgray);
+    color: var(--charcoal);
+    padding: 1rem;
+    border-radius: 15px;
+    position: relative;
+    left: -50px;
+    top: -10px;
+    width: 200px;
+    text-align: left;
+  }
+
+  .weather {
+    display: block;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    background-color: var(--dgray);
+    color: var(--cream);
+    padding: 2rem;
+    border-radius: 15px;
+    grid-template-columns: 1fr 1fr;    
+    border: 5px solid var(--orange);
+  }
+
+  .weather h2 {
+    font-family: Waterfall, Arial, Helvetica, sans-serif;
+    background-color: var(--lgray);
+    color: var(--charcoal);
+    padding: 1rem;
+    border-radius: 15px;
+    position: relative;
+    left: -50px;
+    top: -10px;
+    width: 200px;
+  }
+
+  .weather h2::after {
+    content: "⛅";
+    padding-left: 1rem;
+  }
+
+  .weather .icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 28.125em) {  
+  .weather-heading .icon {
+    display: block;
+    margin: 8px auto;
+  }
+
+  .data, .weather-heading h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 56.25em) {  
+  .weather-heading .icon {
+    display: block;
+    margin: 8px auto;
+  }
+  
+  .data, .weather-heading h2 {
+    text-align: center;
+    padding-top: 1rem;
+  }
+} 
