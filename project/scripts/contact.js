@@ -1,17 +1,14 @@
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
 
-function countReview() {
-  let reviewCount = localStorage.getItem("reviewCounter") || 0;
-  reviewCount = parseInt(reviewCount) + 1;
-  localStorage.setItem("reviewCounter", reviewCount);
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector(".contact-form");
 
-  let counter = document.getElementById("counter");
-  if (counter) {
-    counter.textContent = reviewCount;
+  if (form) {
+    form.addEventListener("submit", () => {
+      let messageCount = localStorage.getItem("messageCounter") || 0;
+      messageCount = parseInt(messageCount) + 1;
+      localStorage.setItem("messageCounter", messageCount);
+    });
   }
-}
-
-if (window.location.pathname.includes("review.html")) {
-  countReview();
-}
+});
