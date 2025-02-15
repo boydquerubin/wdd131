@@ -58,6 +58,7 @@ footer {
 
 h1 {
   padding: 2rem;
+  color: var(--charcoal);
 }
 
 h2 {
@@ -102,22 +103,6 @@ body {
   font-size: 1.2rem;
   line-height: 1.6;
   color: var(--charcoal);
-}
-
-.cta-button {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  color: var(--cream);
-  background-color: var(--orange);
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: var(--dgray);
 }
 
 .card-container {
@@ -218,12 +203,12 @@ body {
     color: var(--cream);
     padding: 2rem;
     border-radius: 15px;
-    border: 5px solid var(--orange);
+    /* border: 5px solid var(--charcoal); */
   }
 
   .data h2 {
     font-family: Waterfall, Arial, Helvetica, sans-serif;
-    background-color: var(--lgray);
+    background-color: var(--orange);
     color: var(--charcoal);
     padding: 1rem;
     border-radius: 15px;
@@ -244,12 +229,12 @@ body {
     padding: 2rem;
     border-radius: 15px;
     grid-template-columns: 1fr 1fr;    
-    border: 5px solid var(--orange);
+    /* border: 5px solid var(--charcoal); */
   }
 
   .weather h2 {
     font-family: Waterfall, Arial, Helvetica, sans-serif;
-    background-color: var(--lgray);
+    background-color: var(--orange);
     color: var(--charcoal);
     padding: 1rem;
     border-radius: 15px;
