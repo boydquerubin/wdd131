@@ -1,6 +1,14 @@
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
 
+const mainNav = document.querySelector('.popularity')
+const popularityButton = document.querySelector('#menu');
+
+popularityButton.addEventListener('click', () => {
+	mainNav.classList.toggle('show');
+	popularityButton.classList.toggle('show');
+});
+
 const dishes = [
   {
     dish: "Adobo",
@@ -142,3 +150,47 @@ document.addEventListener("DOMContentLoaded", () => {
   rows[2].querySelector(".weather-value").textContent = `${windSpeed} mph`;
   rows[3].querySelector(".weather-value").textContent = `${windChillValue} °${unit}`;
 });
+
+const anyLink = document.querySelector("#any");
+const veryHighLink = document.querySelector("#veryHigh");
+const highLink = document.querySelector("#high");
+const mediumLink = document.querySelector("#medium");
+
+const popularityList = document.querySelector(".popularity");
+
+anyLink.addEventListener("click", () => {
+  document.querySelector(".dish-cards").innerHTML = "";
+  updatePopularityLabel("Any");
+  createDishCard(dishes);
+});
+
+veryHighLink.addEventListener("click", () => {
+  document.querySelector(".dish-cards").innerHTML = "";
+  updatePopularityLabel("Very High");
+  createDishCard(dishes.filter(dish => dish.popularity === "Very High"));
+});
+
+highLink.addEventListener("click", () => {
+  document.querySelector(".dish-cards").innerHTML = "";
+  updatePopularityLabel("High");
+  createDishCard(dishes.filter(dish => dish.popularity === "High"));
+});
+
+mediumLink.addEventListener("click", () => {
+  document.querySelector(".dish-cards").innerHTML = "";
+  updatePopularityLabel("Medium");
+  createDishCard(dishes.filter(dish => dish.popularity === "Medium"));
+});
+
+function updatePopularityLabel(selectedText) {
+  document.querySelectorAll(".popularity li a").forEach(link => {
+    link.classList.remove("selected");
+  });
+
+  const selectedLink = [...document.querySelectorAll(".popularity li a")].find(link => link.innerText === selectedText);
+  
+  if (selectedLink) {
+    selectedLink.classList.add("selected");
+  }
+}
+
