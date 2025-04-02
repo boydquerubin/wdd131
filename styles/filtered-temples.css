@@ -79,12 +79,12 @@ nav {
 
 .navigation a {
   display: block;
+  color: var(--baby-powder);
+  background-color: var(--oxford-blue);
   padding: 0.5rem 1rem;
   text-align: left;
   text-decoration: none;    
   font-size: large;
-  color: var(--baby-powder);
-  background-color: var(--oxford-blue);
   transition: 0.5s;
   text-align: center;
 }
